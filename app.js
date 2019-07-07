@@ -22,12 +22,6 @@ const blogSchema = new mongoose.Schema({
 })
 const Blog = mongoose.model('Blog', blogSchema)
 
-// Blog.create({
-//     title: 'Saddam Shah',
-//     image: 'https://images.unsplash.com/photo-1562336820-bf026e805e30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-//     body: 'This is a beutiful Post app and yes this is created by me.'
-// })
-
 //ROUTES
 app.get('/', (req,res) => {
     res.redirect('/blogs')
