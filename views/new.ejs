@@ -1,0 +1,22 @@
+<% include ./layouts/header %>
+<div class="ui main text container segment">
+    <div class="ui hug header">New Blog</div>
+    <div class="ui container">
+        <form action="/blogs" method="POST" class="ui form">
+            <div class="field">
+                <label>Title</label>
+                <input type="text" name="blog[title]" placeholder="Title">
+            </div>
+            <div class="field">
+                <label>Image</label>
+                <input type="text" name="blog[image]" placeholder="image_(url)">
+            </div>
+            <div class="field">
+                <label>Blog content</label>
+                <textarea name="blog[body]"></textarea>
+            </div>
+            <button class="ui violet basic button">Submit</button>
+        </form>
+    </div>
+</div>
+<% include ./layouts/footer %>
